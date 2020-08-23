@@ -38,3 +38,18 @@
 .input-group input:last-child {
   margin-right: 0;
 }
+
+/* this line I am using to test a validation function from MDN article */
+input:invalid{
+  border: 2px dashed red
+}
+
+input:invalid:required {
+background-image: linear-gradient(to right, orange, purple );
+}
+
+/* used a gnarly gradient to see that code worked. as each field is filled in, background returns to normal. */
+
+input:valid{
+  border: 2px solid black
+}
