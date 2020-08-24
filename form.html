@@ -39,9 +39,8 @@
           <div class="col">
             <div class="input-field" id="cvv-field">
               <label for="cvv">CVV</label>
-              <input id="cvv" type="text" required pattern="[0-9] {3}" required>
-              <!-- attempted using pattern attribute with 3 characters. 
-                ask - is the "required pattern" and "required" at end redundant? -->
+              <input id="cvv" type="number" required pattern="[0-9] {3}" required>
+              <!-- fixed line 42, removed redundancy and changed type from text to number -->
             </div>
           </div>
           <div class="col">
